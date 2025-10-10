@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Pak De' Aqiqah</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar-container navbar-expand-lg fixed-top">
+        <div class="container-fluid navbar">
+            <a class="navbar-brand m-0" href="#">
+                <div class="brand-icon"></div>
+                Pak De' Farm
+            </a>
+
+            <button class="navbar-toggler border-0 shadow-none text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M5 22.5C4.64584 22.5 4.34917 22.38 4.11 22.14C3.87084 21.9 3.75084 21.6033 3.75 21.25C3.74917 20.8967 3.86917 20.6 4.11 20.36C4.35084 20.12 4.6475 20 5 20H25C25.3542 20 25.6513 20.12 25.8913 20.36C26.1313 20.6 26.2508 20.8967 26.25 21.25C26.2492 21.6033 26.1292 21.9004 25.89 22.1412C25.6508 22.3821 25.3542 22.5017 25 22.5H5ZM5 16.25C4.64584 16.25 4.34917 16.13 4.11 15.89C3.87084 15.65 3.75084 15.3533 3.75 15C3.74917 14.6467 3.86917 14.35 4.11 14.11C4.35084 13.87 4.6475 13.75 5 13.75H25C25.3542 13.75 25.6513 13.87 25.8913 14.11C26.1313 14.35 26.2508 14.6467 26.25 15C26.2492 15.3533 26.1292 15.6504 25.89 15.8913C25.6508 16.1321 25.3542 16.2517 25 16.25H5ZM5 10C4.64584 10 4.34917 9.88 4.11 9.64C3.87084 9.4 3.75084 9.10333 3.75 8.75C3.74917 8.39667 3.86917 8.1 4.11 7.86C4.35084 7.62 4.6475 7.5 5 7.5H25C25.3542 7.5 25.6513 7.62 25.8913 7.86C26.1313 8.1 26.2508 8.39667 26.25 8.75C26.2492 9.10333 26.1292 9.40042 25.89 9.64125C25.6508 9.88208 25.3542 10.0017 25 10H5Z"
+                        fill="white" />
+                </svg>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link p-0" href="#tentang">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-0" href="#katalog">Katalog Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-0" href="#testimoni">Testimoni</a>
+                    </li>
+                </ul>
+
+                <!-- Tombol WhatsApp pakai Bootstrap -->
+                <button type="button" class="btn-whatsapp fw-semibold"
+                    onclick="window.open('https://wa.me/62812345678900?text=Halo%20saya%20mau%20pesan%20produk', '_blank')">
+                    <img src="asset/icon/whatsapp.svg" alt="WhatsApp" class="me-2">
+                    Hubungi Kami
+                </button>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" style="background-image:url('../asset/img/hero.png');">
+        <!-- Hero Content -->
+        <div class="custom-container">
+            <div class="row align-items-center hero-content">
+                <div class="col-12 col-lg-7">
+                    <div class="padding-hero">
+                        <h1 class="hero-title">
+                            Sajian syukur terbaik untuk yang tersayang
+                        </h1>
+                        <p class="hero-subtitle fw-normal">
+                            Kami memastikan mulai dari proses sembelih <br>
+                            hingga sajian menu lezat, dilakukan sesuai <br>
+                            tuntunan syariat islam.
+                        </p>
+                        <a href="#" class="btn-order fw-semibold">
+                            Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- background text -->
+        <div class="aqiqah-text">
+            <img src="asset/img/text-aqiqah.webp" alt="">
+        </div>
+    </section>
+
+    <!-- LEGAL CERTIFICATION -->
+    <section class="legal-certification">
+        <div class="custom-container">
+            <div class="row">
+
+                <!-- Kolom Kiri: Logo -->
+                <div class="col-12 col-lg-5">
+                    <div class="logo-box">
+                        <img src="asset/img/isolation_mode.png" alt="Isolation Mode" class="logo-isolation">
+                        <img src="asset/img/halal-logo.png" alt="Halal MUI" class="logo-halal">
+                        <img src="asset/img/bnsp.png" alt="BNSP" class="logo-bnsp">
+                    </div>
+                </div>
+
+                <!-- Kolom Kanan: Konten -->
+                <div class="col-12 col-lg-7">
+                    <div class="content-box">
+                        <h2 class="fw-normal">
+                            Tersertifikasi Demi Menjaga Kualitas Produk dan Sesuai Syariat Islam
+                        </h2>
+                        <p class="fw-normal mb-0">
+                            Sebagai lembaga aqiqah yang telah tersertifikasi HALAL, Pak De’ Aqiqah
+                            menyediakan layanan catering aqiqah dengan pilihan menu lezat, praktis,
+                            dan higienis. Solusi ini sangat cocok untuk Ayah & Bunda yang ingin
+                            menjalankan ibadah aqiqah tanpa ribet dan terjangkau.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HALAL PROCESS SECTION -->
+    <section class="halal-section">
+        <div class="custom-container">
+            <div class="halal-process d-flex justify-content-center align-items-center">
+                <!-- Center: Halal Logo -->
+                <div class="center-item">
+                    <div class="halal-center">
+                        <img src="asset/img/isolation_mode.png" alt="">
+                    </div>
+                </div>
+
+                <!-- Top: Kandang -->
+                <div class="top-item">
+                    <div class="process-label fw-normal">Kandang</div>
+                    <div class="process-circle">
+                        <img src="asset/icon/kandang.svg" alt="Kandang" class="process-icon">
+                    </div>
+                    <div class="arrow arrow-to-center arrow-from-top">
+                        <img src="asset/icon/vector-10.svg" alt="">
+                    </div>
+                </div>
+
+                <!-- Left: Distribusi -->
+                <div class="left-item">
+                    <div class="process-label">Distribusi</div>
+                    <div class="process-circle">
+                        <img src="asset/icon/distribusi.svg" alt="Distribusi" class="process-icon">
+                    </div>
+                    <div class="arrow arrow-to-center arrow-from-left">
+                        <img src="asset/icon/vector-10.svg" alt="">
+                    </div>
+                </div>
+
+                <!-- Right: Hewan -->
+                <div class="right-item">
+                    <div class="process-label">Hewan</div>
+                    <div class="process-circle">
+                        <img src="asset/icon/hewan.svg" alt="Hewan" class="process-icon">
+                    </div>
+                    <div class="arrow arrow-to-center arrow-from-right">
+                        <img src="asset/icon/vector-10.svg" alt="">
+                    </div>
+                </div>
+
+                <!-- Bottom Left: Proses Masak -->
+                <div class="bottom-left-item">
+                    <div class="process-circle">
+                        <img src="asset/icon/memasak.svg" alt="Proses Masak" class="process-icon">
+                    </div>
+                    <div class="process-label-bottom">Proses Masak</div>
+                    <div class="arrow arrow-to-center arrow-from-bottom-left">
+                        <img src="asset/icon/vector-10.svg" alt="">
+                    </div>
+                </div>
+
+                <!-- Bottom Right: Pemotongan -->
+                <div class="bottom-right-item">
+                    <div class="process-circle">
+                        <img src="asset/icon/pemotongan.svg" alt="Pemotongan" class="process-icon">
+                    </div>
+                    <div class="process-label-bottom">Pemotongan</div>
+                    <div class="arrow arrow-to-center arrow-from-bottom-right">
+                        <img src="asset/icon/vector-10.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- SOCIAL PROOF SECTION -->
+    <section class="social-proof-section">
+        <div class="custom-container">
+            <div class="row g-0 social-proof">
+
+                <!-- Card 1 -->
+                <div class="col-12 col-lg-4 card-sp">
+                    <div class="sp-card h-100">
+                        <div class="sp-icon">
+                            <img src="asset/icon/safety.png" alt="icon 1">
+                        </div>
+                        <h3 class="sp-title fw-normal">Hewan Aqiqah Sesuai Syariat</h3>
+                        <p class="sp-desc mb-0">
+                            Kami memastikan hewan aqiqah yang disediakan memenuhi syarat syariat Islam: cukup umur,
+                            sehat, dan tidak cacat.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-12 col-lg-4 card-sp">
+                    <div class="sp-card h-100">
+                        <div class="sp-icon">
+                            <img src="asset/icon/coin-thumb.png" alt="icon 2">
+                        </div>
+                        <h3 class="sp-title fw-normal">Harga Paket Terjangkau & Berkualitas</h3>
+                        <p class="sp-desc mb-0">
+                            Kami menawarkan harga terbaik untuk Ayah & Bunda tanpa mengurangi kualitas, baik pada hewan
+                            maupun masakannya.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-12 col-lg-4 card-sp">
+                    <div class="sp-card h-100">
+                        <div class="sp-icon">
+                            <img src="asset/icon/food-safety.png" alt="icon 3">
+                        </div>
+                        <h3 class="sp-title fw-normal">Tersertifikasi Keamanan</h3>
+                        <p class="sp-desc mb-0">
+                            Kami berkomitmen menyajikan penyembelihan dan pengolahan makanan sesuai standar keamanan
+                            pangan dan tuntunan syariat Islam.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PAKET AQIQAH SECTION -->
+    <section class="paket-aqiqah-section">
+        <div class="custom-container h-100">
+            <div class="row g-0 content-paket">
+
+                <!-- Card 1: Hewan Kambing Aqiqah -->
+                <div class="col-12 col-md-6 col-lg-4 card-pk">
+                    <div class="card-paket h-100">
+                        <div class="ratio card-img-container">
+                            <img src="asset/img/paket-hewan-aqiqah.png" class="img-fluid" alt="Hewan Kambing Aqiqah">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Hewan Kambing Aqiqah</h5>
+                            <p class="card-text m-0">Sehat & sesuai syariat</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Menu Paket Aqiqah -->
+                <div class="col-12 col-md-6 col-lg-4 card-pk">
+                    <div class="card-paket h-100">
+                        <div class="card-img-container">
+                            <img src="asset/img/paket-menu-aqiqah.png" class="img-fluid" alt="Hewan Kambing Aqiqah">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Menu Paket Aqiqah</h5>
+                            <p class="card-text">100% halal, lezat, dan berkah</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Paket Aqiqah via Gojek -->
+                <div class="col-12 col-md-6 col-lg-4 card-pk">
+                    <div class="card-paket h-100">
+                        <div class="card-img-container">
+                            <img src="asset/img/paket-gojek.png" class="img-fluid" alt="Hewan Kambing Aqiqah">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Paket Aqiqah via Gojek</h5>
+                            <p class="card-text">Praktis & langsung pesan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- BEST SELLER SECTION -->
+    <section class="section-best-seller">
+
+        <div class="custom-container">
+            <div class="bs-container">
+                <div class="title-bar d-flex justify-content-between align-items-center">
+                    <div class="title-best-seller">
+                        <p class="section-title mb-4">Paket menu rekomendasi</p>
+                        <h2 class="title fw-normal mb-4  mb-lg-0">Paket menu favorit <br>rekomendasi untuk anda</h2>
+                    </div>
+
+                    <!-- Controls -->
+                    <div class="carousel-controls d-none d-md-flex">
+                        <!-- Controls -->
+                        <div class="carousel-control navigation-buttons mt-4 mt-md-0">
+                            <button class="nav-btn" id="prevBtn">
+                                <i class="bi bi-arrow-left"></i>
+                            </button>
+                            <button class="nav-btn active" id="nextBtn">
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="carousel-wrapper" id="carouselWrapper">
+                    <!-- Card 1 -->
+                    <div class="best-seller-card">
+                        <img src="asset/img/best-seller-4.jpg" alt="Menu 1" class="img-fluid">
+                        <div class="badge-seller">
+                            <img src="asset/icon/crown.svg" alt="" class="me-2">
+                            <span class="fw-medium">Best Seller</span>
+                        </div>
+                        <div class="package-name">Nama paket menu 01</div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="best-seller-card">
+                        <img src="asset/img/best-seller-2.png" alt="Menu 2" class="img-fluid">
+                        <div class="badge-seller">
+                            <img src="asset/icon/crown.svg" alt="" class="me-2">
+                            <span class="small fw-medium">Best Seller</span>
+                        </div>
+                        <div class="package-name">Nama paket menu 02</div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="best-seller-card">
+                        <img src="asset/img/best-seller-3.png" alt="Menu 3" class="img-fluid">
+                        <div class="badge-seller">
+                            <img src="asset/icon/crown.svg" alt="" class="me-2">
+                            <span class="small fw-medium">Best Seller</span>
+                        </div>
+                        <div class="package-name">Nama paket menu 03</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CATEGOTY SECTION -->
+    <section class="section-category">
+        <div class="custom-container">
+            <div class="title-category">
+                <p class="section-title">Paket menu rekomendasi</p>
+                <h1 class="title fw-normal mb-0">Beragam pilihan paket menu dengan harga terjangkau</h1>
+            </div>
+
+            <div class="main-content d-flex flex-column flex-lg-row align-items-lg-center">
+                <div class="category-list d-flex flex-column gap-3">
+                    <div class="category-item active" onclick="selectCategory(this)">
+                        <h3 class="category-name">Kategori Menu Special</h3>
+                        <div class="category-count">+4</div>
+                    </div>
+
+                    <div class="category-item" onclick="selectCategory(this)">
+                        <h3 class="category-name">Kategori Menu Reguler</h3>
+                        <div class="category-count">+2</div>
+                    </div>
+
+                    <div class="category-item" onclick="selectCategory(this)">
+                        <h3 class="category-name">Kategori Menu Standar</h3>
+                        <div class="category-count">+8</div>
+                    </div>
+                </div>
+
+                <div class="image-wrapper">
+                    <div class="image-food-container"></div>
+                    <div class="btn btn-overlay border-0">
+                        <span class="fw-medium">Lainnya</span>
+                        <div class="overlay-icon">
+                            <img src="asset/icon/export.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL SECTION -->
+    <section class="testimonial-section">
+        <div class="custom-container">
+            <div class="row">
+                <!-- Left Content -->
+                <div class="col-12 col-lg-6">
+                    <div class="content-catalog">
+                        <div
+                            class="content-title d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+                            <h2 class="title fw-normal">Yuk gabung dengan mereka yang sudah rasakan manfaat
+                                kami :)</h2>
+
+                            <button href="#" class="btn-catalog fw-semibold">Lihat Katalog Menu</button>
+                        </div>
+
+                        <div class="food-images">
+                            <div class="food-left d-none d-lg-block">
+                                <img src="asset/img/best-seller1.png" alt="Makanan 1" class="food-img">
+                            </div>
+                            <div class="food-right">
+                                <img src="asset/img/best-seller-4.jpg" alt="Makanan 2" class="food-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content - Testimonial Carousel -->
+                <div class="col-12 col-lg-6">
+                    <div class="content-testimoni">
+                        <div class="testimonial-card">
+                            <!-- Avatar carousel -->
+                            <div class="d-flex justify-content-center align-content-center">
+                                <div class="testimonial-users-wrapper">
+                                    <div class="testimonial-users d-flex align-items-center" id="testimonialUsers">
+                                        <!-- Avatar akan digenerate lewat JS -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial text -->
+                            <p class="testimonial-text fw-medium" id="testimonialText"></p>
+                            <h6 class="testimonial-name fw-semimedium" id="testimonialName"></h6>
+                            <p id="testimonialRating" class="rating d-flex align-items-center justify-content-center">
+                            </p>
+
+                            <!-- Carousel indicators -->
+                            <div class="carousel-indicators-custom" id="testimonialIndicators"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="custom-container">
+            <div class="cards-wrapper d-flex justify-content-center flex-wrap">
+
+                <div class="card-aqiqah d-flex flex-column justify-content-between">
+                    <div class="card-img-menu">
+                        <img src="asset/icon/label.svg" alt="" class="label-cta">
+                        <img src="asset/img/paket-menu-cta.png" alt="Paket Menu Aqiqah" class="img-menu">
+                    </div>
+                    <div>
+                        <h3 class="card-title-cta fw-medium">Paket Menu Aqiqah</h3>
+                        <button type="button" class="btn-whatsapp fw-semibold"
+                            onclick="window.open('https://wa.me/62812345678900?text=Halo%20saya%20mau%20pesan%20produk', '_blank')">
+                            <img src="asset/icon/whatsapp.svg" alt="WhatsApp" class="me-2">
+                            Pesan Sekarang
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-aqiqah">
+                    <div class="card-img-menu">
+                        <img src="asset/icon/label-2.svg" alt="" class="label-cta">
+                        <img src="asset/img/hewan-kambing-cta.png" alt="Hewan Kambing Aqiqah" class="img-kambing">
+                    </div>
+                    <div>
+                        <h3 class="card-title-cta fw-medium">Hewan Kambing Aqiqah</h3>
+                        <button type="button" class="btn-whatsapp fw-semibold"
+                            onclick="window.open('https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20produk', '_blank')">
+                            <img src="asset/icon/whatsapp.svg" alt="WhatsApp" class="me-2">
+                            Pesan Sekarang
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- DAILY CATERING -->
+    <section class="daily-catering">
+        <!-- Hero Content -->
+        <div class="custom-container">
+            <div class="daily-catering-content">
+                <div class="row g-3 align-items-center">
+                    <div class="col-12 col-lg-6">
+                        <div class="content-dc">
+                            <h1 class="title fw-normal">
+                                Pesan Mudah, Nikmati Hidangan Berkah
+                            </h1>
+                            <p class="m-0">
+                                Tak perlu repot lagi, cukup pesan via GoFood dan kami akan menghadirkan sajian lezat
+                                penuh
+                                cita rasa yang siap menemani momen spesial Anda bersama keluarga.
+                            </p>
+                            <button type="button" class="btn-gofood fw-semibold d-flex align-items-center">
+                                <div class="gofood-icon">
+                                    <img src="asset/icon/gofood.svg" alt="GoFood" class="img-fluid">
+                                </div>
+                                gofood
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 mt-dc">
+                        <div class="d-flex justify-content-end">
+                            <div class="banner-dc">
+                                <img src="asset/img/daily-catering.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-custom bg-black">
+        <div class="custom-container">
+            <div class="footer-content d-flex justify-content-center align-items-center">
+
+                <!-- Left: Brand/Logo -->
+                <div class="left-content">
+                    <a class="navbar-brand" href="#">
+                        <div class="brand-icon fw-bold"></div>
+                        Pak De' Farm
+                    </a>
+                </div>
+
+
+                <!-- Center: Copyright -->
+                <div class="center-content order-1 order-md-0">
+                    <p class="copyright-text m-0">©2025 <span class="fw-semibold">Pak De' Farm</span> | All Right
+                        Reserved</p>
+                </div>
+
+                <!-- Right: Social Icons -->
+                <div class="right-content">
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" title="Facebook">
+                            <img src="asset/icon/fb-icon.svg" alt="" class="img-fluid">
+                        </a>
+                        <a href="#" class="social-icon" title="Instagram">
+                            <img src="asset/icon/Instagram.svg" alt="">
+                        </a>
+                        <a href="#" class="social-icon" title="WhatsApp">
+                            <img src="asset/icon/wa-icon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navbar = document.querySelector('.navbar-container');
+
+            // Function untuk menambah/hapus class 'scrolled'
+            function handleScroll() {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            }
+
+            // Jalankan saat scroll
+            window.addEventListener('scroll', handleScroll);
+
+            // Check saat pertama load (jika user sudah di tengah halaman)
+            handleScroll();
+        });
+
+        // Ganti active button saat diklik
+        document.querySelectorAll('.nav-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        const wrapperslide = document.getElementById('carouselWrapper');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        prevBtn.addEventListener('click', () => {
+            wrapperslide.scrollBy({ left: -500, behavior: 'smooth' });
+        });
+
+        nextBtn.addEventListener('click', () => {
+            wrapperslide.scrollBy({ left: 500, behavior: 'smooth' });
+        });
+
+        (function () {
+            const testimonials = [
+                { text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.", name: "Rindi Rica", rating: "4.8", city: "Malang", avatar: "asset/img/testi1.jpg" },
+                { text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.", name: "Budi Santoso", rating: "4.9", city: "Jakarta", avatar: "asset/img/testi2.jpg" },
+                { text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.", name: "Siti Aisyah", rating: "4.7", city: "Surabaya", avatar: "asset/img/testi3.jpg" },
+                { text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.", name: "Andi Pratama", rating: "5.0", city: "Bandung", avatar: "asset/img/testi4.jpg" },
+                { text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.", name: "Dewi Lestari", rating: "4.6", city: "Yogyakarta", avatar: "asset/img/testi5.jpg" }
+            ];
+
+            const usersContainer = document.getElementById('testimonialUsers');
+            const testimonialWrapper = document.querySelector('.testimonial-users-wrapper');
+            const indicatorsContainer = document.getElementById('testimonialIndicators');
+
+            function renderUsers() {
+                usersContainer.innerHTML = '';
+                indicatorsContainer.innerHTML = '';
+
+                const totalItems = testimonials.length;
+                const cloneCount = 3;
+
+                // Clone dari akhir ke awal
+                for (let i = totalItems - cloneCount; i < totalItems; i++) {
+                    let img = document.createElement('img');
+                    img.src = testimonials[i].avatar;
+                    img.alt = testimonials[i].name;
+                    img.dataset.cloneIndex = i;
+                    img.dataset.isClone = 'true';
+                    usersContainer.appendChild(img);
+                }
+
+                // Avatar asli
+                testimonials.forEach((t, index) => {
+                    let img = document.createElement('img');
+                    img.src = t.avatar;
+                    img.alt = t.name;
+                    img.dataset.originalIndex = index;
+                    img.dataset.isClone = 'false';
+                    usersContainer.appendChild(img);
+
+                    const dot = document.createElement('span');
+                    if (index === 0) dot.classList.add('active');
+                    indicatorsContainer.appendChild(dot);
+                });
+
+                // Clone dari awal ke akhir
+                for (let i = 0; i < cloneCount; i++) {
+                    let img = document.createElement('img');
+                    img.src = testimonials[i].avatar;
+                    img.alt = testimonials[i].name;
+                    img.dataset.cloneIndex = i;
+                    img.dataset.isClone = 'true';
+                    usersContainer.appendChild(img);
+                }
+            }
+
+            renderUsers();
+
+            const userImages = usersContainer.querySelectorAll('img');
+            const dots = indicatorsContainer.querySelectorAll('span');
+            const totalItems = testimonials.length;
+            const cloneCount = 3;
+            let currentIndex = cloneCount;
+            let isTransitioning = false;
+
+            const testimonialText = document.getElementById('testimonialText');
+            const testimonialName = document.getElementById('testimonialName');
+            const testimonialRating = document.getElementById('testimonialRating');
+
+            function updateIndicators(realIndex) {
+                dots.forEach(dot => dot.classList.remove('active'));
+                dots[realIndex].classList.add('active');
+            }
+
+            function showTestimonial(index) {
+                userImages.forEach(img => img.classList.remove('active'));
+                userImages[index].classList.add('active');
+
+                const activeImg = userImages[index];
+                const wrapperCenter = testimonialWrapper.offsetWidth / 2;
+                const activeCenter = activeImg.offsetLeft + activeImg.offsetWidth / 2;
+                const offset = wrapperCenter - activeCenter;
+
+                usersContainer.style.transform = `translateX(${offset}px)`;
+
+                let realIndex;
+                if (activeImg.dataset.isClone === 'true') {
+                    realIndex = parseInt(activeImg.dataset.cloneIndex);
+                } else {
+                    realIndex = parseInt(activeImg.dataset.originalIndex);
+                }
+
+                testimonialText.textContent = `"${testimonials[realIndex].text}"`;
+                testimonialName.textContent = testimonials[realIndex].name;
+                testimonialRating.innerHTML = `<span class="d-flex align-items-center justify-content-center"> <img src="asset/icon/star.svg"> ${testimonials[realIndex].rating}</span> <span class="me-2 ms-2"> • </span> ${testimonials[realIndex].city}`;
+
+                updateIndicators(realIndex);
+            }
+
+            function nextTestimonial() {
+                if (isTransitioning) return;
+
+                isTransitioning = true;
+                currentIndex++;
+
+                showTestimonial(currentIndex);
+
+                // Cek apakah sudah mencapai clone terakhir
+                if (currentIndex >= userImages.length - cloneCount) {
+                    setTimeout(() => {
+                        // Nonaktifkan transisi
+                        usersContainer.style.transition = 'none';
+                        // Reset ke posisi awal (setelah clone pertama)
+                        currentIndex = cloneCount;
+                        showTestimonial(currentIndex);
+
+                        // Aktifkan kembali transisi setelah posisi direset
+                        setTimeout(() => {
+                            usersContainer.style.transition = 'transform 0.6s ease';
+                            isTransitioning = false;
+                        }, 20);
+                    }, 600);
+                } else {
+                    setTimeout(() => {
+                        isTransitioning = false;
+                    }, 600);
+                }
+            }
+
+            setInterval(nextTestimonial, 4000);
+
+            setTimeout(() => {
+                usersContainer.style.transition = 'transform 0.6s ease';
+                showTestimonial(currentIndex);
+            }, 100);
+        })();
+
+    </script>
+</body>
+
+</html>

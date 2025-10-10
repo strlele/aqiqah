@@ -1,0 +1,2766 @@
+/* Font Declarations */
+@font-face {
+  font-family: "VintageGlamore";
+  src: url("../asset/font/VintageGlamore-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "VintageGlamore";
+  src: url("../asset/font/VintageGlamore-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../asset/font/Inter-VariableFont_opsz\,wght.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../asset/font/Inter-VariableFont_opsz\,wght.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("../asset/font/Merriweather-VariableFont_opsz\,wdth\,wght.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("../asset/font/Merriweather-Italic-VariableFont_opsz\,wdth\,wght.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* CSS Variables */
+:root {
+  --green-color: #00FF8C;
+  --orange-color: #FFAA00;
+  --brown-color: #1C0D06;
+  --red-color: #FF2033;
+  --neutral-400: #768491;
+}
+
+/* Base Typography - Mobile First */
+h1,
+h2,
+.aqiqah-text,
+.card-title {
+  font-family: "VintageGlamore", serif;
+  font-style: normal;
+}
+
+/* Container - Mobile First */
+.custom-container {
+  max-width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+/* NAVBAR - MOBILE */
+.navbar-container {
+  padding: 0 20px;
+}
+
+.navbar-container.scrolled {
+  background-color: #1C0D06;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  font-family: 'Inter', sans-serif;
+  padding: 16px 0;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-family: 'Inter', sans-serif;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  font-size: 16px;
+  color: white !important;
+}
+
+.brand-icon {
+  width: 30px;
+  height: 30px;
+  background: var(--orange-color);
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0 20px;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--orange-color) !important;
+}
+
+.btn-order {
+  font-family: 'Inter', sans-serif;
+  background: var(--orange-color);
+  color: black;
+  border: none;
+  padding: 22.5px 56px;
+  border-radius: 16px;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.btn-order:hover {
+  background: #db8300;
+}
+
+/* padding adjustments - container top*/
+.legal-certification,
+.social-proof-section,
+.section-best-seller,
+.section-category,
+.paket-aqiqah-section {
+  padding: 40px 0;
+}
+
+/* Hero Section - Mobile First */
+.hero-section {
+  background: url("../asset/img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 691px;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(248.41deg, rgba(0, 0, 0, 0) 40.48%, rgba(0, 0, 0, 0.7) 75.09%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  padding-top: 78px;
+}
+
+.padding-hero {
+  padding-top: 63px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: white;
+  margin-bottom: 40px;
+  line-height: 1.4;
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.aqiqah-text {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.9);
+  width: 373px;
+  height: 122px;
+  z-index: 2;
+  user-select: none;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+}
+
+.aqiqah-text img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+/* LEGAL CERTIFICATION - Mobile First */
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 0 24px;
+  margin-right: auto;
+  margin-bottom: 32px;
+}
+
+.logo-isolation {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  display: block;
+}
+
+.logo-halal {
+  width: 40px;
+  height: 72px;
+  object-fit: contain;
+  display: block;
+}
+
+.logo-bnsp {
+  width: 120px;
+  height: 45px;
+  object-fit: contain;
+  display: block;
+}
+
+.content-box h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.content-box p {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #121212;
+  line-height: 1.4;
+}
+
+/* HALAL PROCESS - Mobile First */
+
+.halal-section {
+  padding: 40px 0;
+}
+
+.process-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.process-circle {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50%;
+  border: 1px solid #C3C3C3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* transition: transform 0.3s ease; */
+}
+
+.halal-center img {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.process-label {
+  font-family: 'VintageGlamore', serif;
+  text-align: center;
+  color: #333;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.process-label-bottom {
+  font-family: 'VintageGlamore', serif;
+  text-align: center;
+  color: #333;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.process-icon {
+  font-size: 28px;
+}
+
+/* Mobile layout container */
+.halal-process {
+  position: relative;
+  width: 100%;
+  min-width: 336px;
+  min-height: 428.53px;
+  margin: 0 auto;
+}
+
+.center-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top-item {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.left-item {
+  position: absolute;
+  top: 33%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.right-item {
+  position: absolute;
+  top: 33%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.bottom-left-item {
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  transform: translateX(-50%);
+}
+
+.bottom-right-item {
+  position: absolute;
+  bottom: 0;
+  right: 25%;
+  transform: translateX(50%);
+}
+
+/* Arrows pointing to center */
+.arrow img {
+  height: 40px !important;
+  width: auto !important;
+}
+
+.arrow-to-center {
+  position: absolute;
+  z-index: 1;
+}
+
+.arrow-to-center::after {
+  content: '';
+  position: absolute;
+  right: -5px;
+  top: -3px;
+  width: 0;
+  height: 0;
+}
+
+.arrow-from-top {
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%) translateY(60%);
+}
+
+.arrow-from-left {
+  top: 78%;
+  left: 90px;
+  transform: translateY(-40%) translateX(40%) rotate(-70deg);
+}
+
+.arrow-from-right {
+  top: 50%;
+  right: 90px;
+  transform: translateY(40%) translateX(-40%) rotate(70deg);
+}
+
+.arrow-from-bottom-left {
+  bottom: 90px;
+  left: 25%;
+  transform: translateX(228%) translateY(-60%) rotate(214deg);
+}
+
+.arrow-from-bottom-right {
+  bottom: 90px;
+  right: 25%;
+  transform: translateX(-228%) translateY(-60%) rotate(135deg);
+}
+
+/* Social Proof Cards - Mobile First */
+.sp-card {
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100% !important;
+}
+
+.sp-icon {
+  width: 80px;
+  height: 80px;
+  padding: 25px;
+  border-radius: 50%;
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.sp-icon img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.sp-title {
+  font-family: 'VintageGlamore', serif;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.sp-desc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #555;
+}
+
+.row.social-proof {
+  row-gap: 20px;
+}
+
+/* PAKET AQIQAH - MOBILE */
+.row.content-paket {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.card-pk {
+  width: 100%;
+  height: 429px !important;
+}
+
+.card-paket {
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 25px 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* width: 100%;
+  height: 429px !important; */
+  box-shadow: 10px 8px 40px 2px #00000040;
+}
+
+.card-img-container {
+  overflow: hidden;
+  border-radius: 15px;
+  height: 307px;
+  width: 100%;
+}
+
+.card-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card-body {
+  margin-top: 20px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* BEST SELLER SECTION - MOBILE */
+.title-bar {
+  padding-right: 28px;
+}
+
+.title {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+.title {
+  font-family: "VintageGlamore", Georgia, serif;
+  font-size: 32px;
+  line-height: 110%;
+}
+
+.best-seller-card {
+  position: relative;
+  border-radius: 40px;
+  overflow: hidden;
+  flex: 0 0 auto;
+  max-width: 290px;
+  width: 100%;
+  height: 248px;
+  margin-right: 40px;
+}
+
+.best-seller-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.8) 100%);
+  opacity: 1;
+  transition: opacity 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.best-seller-card::before {
+  opacity: 1;
+  /* muncul saat hover */
+}
+
+.package-name {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  position: absolute;
+  bottom: 45px;
+  left: 45px;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  visibility: visible;
+}
+
+.carousel-wrapper .best-seller-card {
+  margin-top: 29px;
+  margin-bottom: 29px;
+}
+
+.best-seller-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.badge-seller {
+  position: absolute;
+  font-size: 12px;
+  top: 15px;
+  right: 15px;
+  background: #fff;
+  color: #000;
+  padding: 12px 16px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.badge-seller img {
+  width: 24px;
+  height: 24px;
+}
+
+.carousel-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.carousel-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-controls {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.section-title {
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+/* CATEGORY SECTION - MOBILE*/
+.main-title {
+  font-size: 32px;
+  line-height: 1.1;
+  margin-bottom: 40px;
+}
+
+.main-content {
+  gap: 32px;
+}
+
+.category-item {
+  background: white;
+  border-radius: 50px;
+  padding: 5px 5px 5px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.category-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.category-item.active {
+  background: var(--orange-color);
+}
+
+.category-name {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.category-count {
+  background: var(--brown-color);
+  color: white;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.category-item:not(.active) .category-count {
+  background: #F9F9F9;
+  color: #000;
+}
+
+.card-img {
+  /* width: 100%;
+  height: 100%; */
+  overflow: hidden;
+  position: relative;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 340px;
+  /* batas maksimum ukuran di layar besar */
+  margin: 0 auto;
+}
+
+.image-food-container {
+  position: relative;
+  width: 340px;
+  height: 274px;
+  background-image: url("../asset/img/img-category.png");
+  background-size: cover;
+  background-position: center;
+  clip-path: path("M 20,0 L 320,0 A 20,20 0 0,1 340,20 L 340,189 A 20,20 0 0,1 320,209 L 200.19,209 A 20,20 0 0,0 180.19,229 L 180.19,254 A 20,20 0 0,1 160.19,274 L 20,274 A 20,20 0 0,1 0,254 L 0,20 A 20,20 0 0,1 20,0 Z");
+}
+
+.btn-overlay {
+  font-family: 'Inter', sans-serif;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 32px;
+  width: 144px;
+  height: 52px;
+  background: #391808;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+
+.btn-overlay:hover {
+  background: rgba(62, 39, 35, 1);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+.overlay-icon img {
+  width: 18px;
+  height: 18px;
+}
+
+
+/* Navigation buttons (hidden on mobile by default) */
+.navigation-buttons {
+  display: none;
+}
+
+.nav-btn {
+  width: 72px;
+  height: 72px;
+  border: 1px solid #000000;
+  border-radius: 16px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-btn i {
+  font-size: 24px;
+  color: #6c757d;
+  transition: color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: #4d2c20;
+  border-color: #4d2c20;
+}
+
+.nav-btn:hover i {
+  color: white;
+}
+
+.nav-btn.active {
+  background: #4d2c20;
+  border-color: #4d2c20;
+}
+
+.nav-btn.active i {
+  color: white;
+}
+
+/* TESTIMONI SECTION - MOBILE*/
+.testimonial-section {
+  padding: 40px 0;
+}
+
+.testimonial-section {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+}
+
+.content-title {
+  margin-bottom: 32px;
+}
+
+.content-title .title {
+  font-size: 30px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.btn-catalog {
+  font-family: 'Inter';
+  font-size: 14px;
+  background: var(--orange-color);
+  border: none;
+  padding: 0 24px;
+  border-radius: 12px;
+  width: 179px;
+  height: 42px;
+}
+
+.btn-catalog:hover {
+  background-color: #ffb300;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.4);
+}
+
+.food-right {
+  padding: 0 34px;
+}
+
+.food-right img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.food-img {
+  width: 100%;
+  border-radius: 35px;
+}
+
+/* Testimonial Card Styles */
+.testimonial-card {
+  background: #F9F9F9;
+  border-radius: 40px;
+  padding: 0 30px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 473px;
+}
+
+.testimonial-users-wrapper {
+  position: relative;
+  width: 293px;
+  margin: 80px 0 40px 0;
+  overflow: hidden;
+}
+
+.testimonial-users {
+  gap: 10px;
+}
+
+.testimonial-users img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+  flex-shrink: 0;
+}
+
+.testimonial-users img.active {
+  width: 65px;
+  height: 65px;
+  opacity: 1;
+  z-index: 2;
+}
+
+.testimonial-users-wrapper::before,
+.testimonial-users-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.testimonial-users-wrapper::before {
+  left: 0px;
+  background: linear-gradient(90deg, #F9F9F9 52.88%, rgba(249, 249, 249, 0) 100%);
+  width: 62px;
+  height: 80px;
+}
+
+/* background: linear-gradient(90deg, #F9F9F9 52.88%, rgba(249, 249, 249, 0) 100%); */
+
+.testimonial-users-wrapper::after {
+  right: 0;
+  background: linear-gradient(90deg, #F9F9F9 52.88%, rgba(249, 249, 249, 0) 100%);
+  width: 62px;
+  height: 80px;
+  transform: rotate(-180deg);
+}
+
+.testimonial-text {
+  /* font-family: 'Inter', serif; */
+  font-style: italic;
+  color: #121212;
+  padding: 10px 0;
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.testimonial-name {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.rating {
+  font-family: 'Inter', serif;
+  color: #6D6D6D;
+  margin-bottom: 40px;
+}
+
+.testimonial-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-rating img {
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
+}
+
+.carousel-indicators-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 25px auto;
+  height: 58px;
+}
+
+.carousel-indicators-custom span {
+  width: 8px;
+  height: 8px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.carousel-indicators-custom span.active {
+  width: 20px;
+  border-radius: 10px;
+  background-color: #000;
+}
+
+
+/* CTA SECTION */
+.cta-section {
+  background: var(--brown-color);
+  padding: 40px 0;
+}
+
+.cards-wrapper {
+  gap: 40px;
+}
+
+.card-aqiqah {
+  background: linear-gradient(180.25deg, rgba(0, 0, 0, 0) 63.99%, #000000 99.78%);
+  border-radius: 40px;
+  border: 1px solid #768491;
+  padding: 30px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 370px;
+}
+
+.img-menu,
+.img-kambing,
+.card-title-cta,
+.btn-whatsapp {
+  position: relative;
+  z-index: 2;
+}
+
+/* .card-aqiqah:hover {
+  transform: translateY(-10px);
+  border-color: #768491;
+  box-shadow: 0 20px 40px rgba(118, 132, 145, 0.2);
+} */
+
+.label-cta {
+  position: absolute;
+  top: 10%;
+  left: -40%;
+  /* width: 300px; */
+  /* height: 50px; */
+  z-index: 1;
+  transform: scale(0.6);
+  /* transform: rotate(-15deg); */
+}
+
+.card-img-menu {
+  margin-bottom: 40px;
+}
+
+.img-menu {
+  width: 100%;
+  height: 192px;
+  object-fit: contain;
+}
+
+.card-img {
+  margin-bottom: 18px;
+}
+
+.img-kambing {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100% !important;
+  height: 192px;
+  object-fit: contain;
+}
+
+.card-title-cta {
+  font-family: 'Inter', serif;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 11px;
+}
+
+/* btn whatsapp */
+.btn-whatsapp {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  background: var(--green-color);
+  border: none;
+  padding: 11px 24px;
+  border-radius: 12px;
+  /* width: 183px; */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.btn-whatsapp>img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.btn-whatsapp:hover {
+  background: #04df7c;
+}
+
+/* DAILY CATERING - MOBILE */
+.daily-catering {
+  padding: 40px 0;
+}
+
+.daily-catering-content {
+  padding: 0;
+}
+
+.content-dc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.mt-dc {
+  margin-top: 40px;
+}
+
+.banner-dc {
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-dc img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.content-dc .title {
+  font-size: 32px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.content-dc p {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.btn-gofood {
+  font-family: 'Inter', sans-serif;
+  background: var(--red-color);
+  color: black;
+  border: none;
+  padding: 11px 24px;
+  margin-top: 25px;
+  border-radius: 12px;
+  font-size: 14px;
+  /* text-decoration: none;
+  display: inline-block; */
+}
+
+.gofood-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin-right: 5px;
+}
+
+/* FOOTER */
+.footer-custom {
+  color: white;
+  padding: 20px 0;
+  min-height: 80px;
+}
+
+.brand-text:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.copyright-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #ccc;
+  text-align: center;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 18px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.footer-custom .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+}
+
+@media (max-width: 320px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .custom-container {
+    padding: 0 14px;
+  }
+
+  .navbar-container {
+    padding: 0 14px;
+  }
+
+  .padding-hero {
+    padding-top: 30px;
+  }
+
+  .hero-section {
+    min-height: 400px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .btn-order {
+    padding: 14px 22px;
+    border-radius: 12px;
+    font-size: 14px;
+  }
+
+  .aqiqah-text {
+    position: absolute;
+    bottom: -29px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.7);
+    width: 373px;
+    height: 122px;
+    z-index: 2;
+    user-select: none;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* LEGAL CERTIFICATION - MOBILE S*/
+  .logo-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 10px;
+    margin-bottom: 28px;
+  }
+
+  .logo-isolation {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo-halal {
+    width: 35px;
+    height: 60px;
+  }
+
+  .logo-bnsp {
+    width: 121px;
+    height: 80px;
+  }
+
+  .content-box h2 {
+    font-size: 28px;
+  }
+
+  .content-box p {
+    font-size: 14px;
+  }
+
+  /* HALAL PROCESS - MOBILE S */
+  .process-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .process-circle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .halal-center img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .halal-process {
+    min-width: 280px;
+    min-height: 390px;
+  }
+
+  /* Arrows pointing to center */
+  .arrow img {
+    height: 36px !important;
+  }
+
+  .arrow-from-top {
+    top: 80px;
+  }
+
+  .arrow-from-left {
+    left: 76px;
+  }
+
+  .arrow-from-right {
+    right: 76px;
+  }
+
+  /* PAKET AQIQAH SECTION - MOBILE S */
+  .card-pk {
+    height: 292px !important;
+  }
+
+  .card-paket {
+    width: 100%;
+    height: 292px !important;
+  }
+
+  /* SOCIAL PROOF SECTION - MOBILE S */
+  .sp-card {
+    border-radius: 20px;
+    padding: 26px;
+    display: flex;
+  }
+
+  .sp-icon {
+    margin-bottom: 12px;
+  }
+
+  .sp-title {
+    margin-bottom: 12px;
+  }
+
+  /* BEST SELLER SECTION - MOBILE S */
+  .title-bar {
+    padding-right: 0px;
+  }
+
+  /* CATEGOTY SECTION - MOBILE S */
+  .title-category {
+    margin-bottom: 30px;
+  }
+
+  .image-food-container {
+    width: 292px;
+    height: 236px;
+    clip-path: path("M 20,0 L 272,0 A 20,20 0 0,1 292,20 L 292,163 A 20,20 0 0,1 272,183 L 171.56,183 A 20,20 0 0,0 151.56,203 L 151.56,216 A 20,20 0 0,1 131.56,236 L 20,236 A 20,20 0 0,1 0,216 L 0,20 A 20,20 0 0,1 20,0 Z");
+  }
+
+
+  .btn-overlay {
+    gap: 8px;
+    width: 132px;
+    height: 44px;
+    border-radius: 12px;
+  }
+
+  .overlay-icon img {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* FOOTER - MOBILE S */
+  .footer-custom .footer-content {
+    gap: 10px;
+  }
+}
+
+
+/* CTA SECTION - mulai dari 425px ke atas (tetap vertikal) */
+@media (min-width: 425px) {
+  .cards-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .card-aqiqah {
+    width: 100%;
+    max-width: 420px;
+    height: 400px;
+    padding: 28px;
+  }
+
+  .label-cta {
+    position: absolute;
+    top: 10%;
+    left: -20%;
+    /* width: 300px; */
+    /* height: 50px; */
+    z-index: 1;
+    transform: scale(0.8);
+    /* transform: rotate(-15deg); */
+  }
+
+  .img-menu,
+  .img-kambing {
+    height: 200px;
+  }
+
+  .card-title-cta {
+    font-size: 20px;
+  }
+
+  .btn-whatsapp {
+    font-size: 14px;
+    padding: 11px 24px;
+  }
+}
+
+
+/* TABLET STYLES - 768px and up */
+@media (min-width: 768px) {
+
+  /* Container adjustments */
+  .custom-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .navbar-container {
+    padding: 0 40px;
+  }
+
+  .navbar-brand {
+    font-size: 18px;
+  }
+
+  /* Hero section adjustments */
+  .hero-section {
+    min-height: 768px;
+  }
+
+  .padding-hero {
+    padding-top: 138px;
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .aqiqah-text {
+    transform: translateX(-50%) scale(1.8);
+    bottom: 20px;
+  }
+
+  .legal-certification {
+    padding: 60px 0;
+  }
+  
+  /* social proof adjustments */
+  .row.social-proof {
+    column-gap: 30px;
+    justify-content: center;
+  }
+
+  .main-title {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+
+  /* HALAL SECTION - TABLET STYLES */
+
+  .halal-section {
+    padding: 40px 0;
+  }
+
+  .halal-process {
+    position: relative;
+    width: 100%;
+    width: 620px;
+    min-height: 650px;
+    margin: 0 auto;
+  }
+
+  .process-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+
+  .process-circle {
+    width: 110px;
+    height: 110px;
+  }
+
+  .halal-center img {
+    width: 110px;
+    height: 110px;
+    display: flex;
+  }
+
+  .process-label {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+
+  .process-label-bottom {
+    font-size: 16px;
+    margin-top: 14px;
+  }
+
+  /* Arrows pointing to center */
+  .arrow img {
+    height: 70px !important;
+    width: auto !important;
+  }
+
+  .arrow-from-top {
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%) translateY(60%);
+  }
+
+  .arrow-from-left {
+    top: 78%;
+    left: 130px;
+    transform: translateY(-40%) translateX(40%) rotate(-70deg);
+  }
+
+  .arrow-from-right {
+    top: 50%;
+    right: 130px;
+    transform: translateY(20%) translateX(-40%) rotate(70deg);
+  }
+
+  .arrow-from-bottom-left {
+    bottom: 90px;
+    left: 25%;
+    transform: translateX(228%) translateY(-80%) rotate(214deg);
+  }
+
+  .arrow-from-bottom-right {
+    bottom: 90px;
+    right: 25%;
+    transform: translateX(-240%) translateY(-80%) rotate(148deg);
+  }
+
+  /* PAKET AQIQAH - TABLET */
+  .row.content-paket {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .card-paket {
+    min-height: 429px !important;
+    width: 100%;
+  }
+
+  .card-body {
+    margin-top: 20px;
+  }
+
+  /* BEST SELLER SECTION - TABLET */
+  .section-best-seller {
+    padding: 80px 0;
+  }
+
+  .badge-seller {
+    font-size: 14px;
+  }
+
+  .title-bar {
+    margin-bottom: 30px;
+  }
+
+  .best-seller-card {
+    max-width: 340px;
+    width: 100%;
+    height: 300px;
+    margin-right: 24px;
+  }
+
+  .food-image {
+    height: 250px;
+  }
+
+  .footer-custom {
+    padding: 25px 0;
+  }
+
+  .footer-custom .footer-content {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  .left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+  }
+
+  .center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-top: 0;
+  }
+
+  .right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 1;
+  }
+
+  .social-icons {
+    margin-top: 0;
+    justify-content: flex-end;
+  }
+
+  /* CATEGORY SECTION - TABLET */
+    .title-category {
+    margin-bottom: 40px;
+  }
+
+  /* TESTIMONI SECTION - TABLET */
+  .testimonial-users-wrapper {
+    position: relative;
+    width: 400px;
+    margin: 80px 0 40px 0;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .food-right {
+    padding: 0 60px;
+  }
+
+  .food-right img {
+  width: 100%;
+  min-height: 380px;
+  object-fit: cover;
+}
+
+.testimonial-card {
+  padding: 20px 80px;
+}
+
+.testimonial-text{
+  padding: 10px 40px;
+}
+
+.testimonial-users {
+  gap: 10px;
+}
+
+.testimonial-users img {
+  width: 60px;
+  height: 60px;
+}
+
+.testimonial-users img.active {
+  width: 86px;
+  height: 86px;
+  opacity: 1;
+  z-index: 2;
+}
+
+.testimonial-users-wrapper::before,
+.testimonial-users-wrapper::after {
+  width: 90px;
+  height: 100%;
+}
+
+  /* CTA SECTION -TABLET */
+  .cards-wrapper {
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .card-aqiqah {
+    width: calc(50% - 30px);
+    max-width: 360px;
+    height: 380px;
+  }
+
+  .img-menu,
+  .img-kambing {
+    height: 210px;
+  }
+
+  .card-title-cta {
+    font-size: 22px;
+  }
+
+  .btn-whatsapp {
+    font-size: 15px;
+    padding: 12px 26px;
+  }
+
+  /* DAILY CATERING - TABLET */
+  .content-dc {
+    padding: 0 40px;
+  }
+
+  .banner-dc {
+    width: 420px;
+    padding: 0 40px;
+  }
+
+}
+
+/* DESKTOP STYLES - 992px and up */
+@media (min-width: 992px) {
+
+  /* CONTAINER TOP - DESKTOP STYLES*/
+  .legal-certification,
+  .halal-section,
+  .social-proof-section,
+  .paket-aqiqah-section {
+    padding: 60px 0;
+  }
+
+  /* Container adjustments */
+  .custom-container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  /* btn whatsapp */
+  .btn-whatsapp {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    background: var(--green-color);
+    border: none;
+    padding: 14px 32px;
+    border-radius: 16px;
+    /* width: 204px; */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+  }
+
+  .btn-whatsapp:hover {
+    background: #04df7c;
+  }
+
+  .btn-whatsapp i {
+    margin-right: 8px;
+  }
+
+  .navbar-container {
+    padding: 32px 80px 0;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .card-sp {
+    max-width: 350px;
+  }
+
+  .row.social-proof {
+    column-gap: 20px;
+  }
+
+  /* HALAL SECTION - DESKTOP STYLES */
+
+  .halal-section {
+    padding: 50px 0;
+  }
+
+  .halal-process {
+    width: 100%;
+    width: 720px;
+    min-height: 750px;
+  }
+
+  .process-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+
+  .process-circle {
+    width: 140px;
+    height: 140px;
+  }
+
+  .halal-center img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .process-label {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .process-label-bottom {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+
+  .bottom-left-item {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    transform: translateX(-50%);
+  }
+
+  .bottom-right-item {
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+    transform: translateX(50%);
+  }
+
+  /* Arrows pointing to center */
+  .arrow img {
+    height: 80px !important;
+    width: auto !important;
+  }
+
+  .arrow-from-top {
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%) translateY(108%);
+  }
+
+  .arrow-from-left {
+    top: 78%;
+    left: 130px;
+    transform: translateY(-40%) translateX(128%) rotate(-70deg);
+  }
+
+  .arrow-from-right {
+    top: 50%;
+    right: 130px;
+    transform: translateY(20%) translateX(-128%) rotate(70deg);
+  }
+
+  .arrow-from-bottom-left {
+    bottom: 90px;
+    left: 25%;
+    transform: translateX(228%) translateY(-128%) rotate(214deg);
+  }
+
+  .arrow-from-bottom-right {
+    bottom: 90px;
+    right: 25%;
+    transform: translateX(-240%) translateY(-128%) rotate(148deg);
+  }
+
+  /* PAKET AQIQAH - DEKSTOP STYLES */
+  .row.content-paket {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+  }
+
+  .card-pk {
+    min-height: 340px !important;
+    width: 350px;
+  }
+
+  /* BEST SELLER SECTION - DESKTOP STYLES */
+  .section-best-seller {
+    padding: 100px 0;
+  }
+
+  .carousel-wrapper .best-seller-card {
+    margin-bottom: 40px;
+  }
+
+  .nav-btn {
+    width: 64px;
+    height: 64px;
+    border: 1px solid #000000;
+    border-radius: 16px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .nav-btn i {
+    font-size: 22px;
+    color: #6c757d;
+    transition: color 0.3s ease;
+  }
+
+  .nav-btn:hover {
+    background: #4d2c20;
+    border-color: #4d2c20;
+  }
+
+  .nav-btn:hover i {
+    color: white;
+  }
+
+  .nav-btn.active {
+    background: #4d2c20;
+    border-color: #4d2c20;
+  }
+
+  .nav-btn.active i {
+    color: white;
+  }
+
+  .bs-container {
+    padding-left: 40px;
+  }
+
+  .best-seller-card::before {
+    opacity: 0;
+    /* default: hidden */
+  }
+
+
+  .best-seller-card:hover::before {
+    opacity: 1;
+    /* overlay muncul saat hover */
+  }
+
+  .best-seller-card:hover .package-name {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .package-name {
+    font-size: 24px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
+  .title-bar {
+    padding: 56px 40px 40px 0;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .best-seller-card {
+    max-width: 440px;
+    height: 360px;
+  }
+
+  .carousel-wrapper {
+    overflow-x: hidden;
+  }
+
+  .carousel-wrapper .best-seller-card {
+    margin-bottom: 80px;
+    margin-top: 0;
+  }
+
+  .navigation-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+  }
+
+  /* CATEGORY SECTION - DESKTOP STYLES */
+  .section-category {
+    padding: 80px 0 100px 0;
+  }
+
+    .title-category {
+    max-width: 600px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .main-title {
+    font-size: 48px;
+  }
+
+  .main-content {
+    justify-content: space-between;
+  }
+
+  .category-list {
+    max-width: 640px;
+    width: 100%;
+  }
+
+  .categories-container {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .food-image {
+    height: 300px;
+  }
+
+  .food-image-container {
+    height: 300px;
+  }
+
+  /* TESTIMONI - DESKTOP STYLE*/
+  .testimonial-section {
+    padding: 80px 0;
+  }
+
+  .content-title {
+    margin-bottom: 32px;
+  }
+
+  .content-title .title {
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 40px;
+  }
+
+  .btn-catalog {
+    font-family: 'Inter';
+    font-size: 14px;
+    background: var(--orange-color);
+    border: none;
+    padding: 0 24px;
+    border-radius: 12px;
+    width: 179px;
+    height: 42px;
+  }
+
+  .btn-catalog:hover {
+    background-color: #ffb300;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.4);
+  }
+
+  .food-images {
+    display: flex;
+    gap: 20px;
+  }
+
+  .food-left img {
+    max-width: 210px;
+    min-height: 220px;
+    object-fit: cover;
+  }
+
+  .food-right {
+    padding: 0;
+  }
+
+  .food-right img {
+    width: 100%;
+    min-height: 220px;
+    object-fit: cover;
+  }
+
+
+  /* Testimonial Card Styles */
+  .testimonial-card {
+    background: #F9F9F9;
+    border-radius: 40px;
+    padding: 0 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 473px;
+  }
+
+  .testimonial-users-wrapper {
+    position: relative;
+    width: 100%;
+    width: 293px;
+    margin: 80px auto 40px;
+    overflow: hidden;
+  }
+
+  .testimonial-users {
+    gap: 10px;
+  }
+
+  .testimonial-users img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    flex-shrink: 0;
+  }
+
+  .testimonial-users img.active {
+    width: 65px;
+    height: 65px;
+    opacity: 1;
+    z-index: 2;
+  }
+
+  .testimonial-users-wrapper::before,
+  .testimonial-users-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    pointer-events: none;
+    z-index: 3;
+  }
+
+  .testimonial-users-wrapper::before {
+    left: 0px;
+    background: linear-gradient(90deg, #F9F9F9 52.88%, rgba(249, 249, 249, 0) 100%);
+    width: 62px;
+    height: 80px;
+  }
+
+  /* background: linear-gradient(90deg, #F9F9F9 52.88%, rgba(249, 249, 249, 0) 100%); */
+
+  .testimonial-users-wrapper::after {
+    right: 0;
+    background: linear-gradient(90deg, #F9F9F9 52.88%, rgba(249, 249, 249, 0) 100%);
+    width: 62px;
+    height: 80px;
+    transform: rotate(-180deg);
+  }
+
+  .testimonial-text {
+    /* font-family: 'Inter', serif; */
+    font-style: italic;
+    color: #121212;
+    padding: 10px 0;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .testimonial-name {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+
+  .rating {
+    margin-bottom: 40px;
+  }
+
+  .testimonial-rating img {
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
+  }
+
+  .carousel-indicators-custom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 25px auto;
+    height: 58px;
+  }
+
+  /* CTA SECTION - DESKTOP STYLES  */
+  .cta-section {
+    padding: 80px 0;
+  }
+
+  .cards-wrapper {
+    gap: 40px;
+  }
+
+  .card-aqiqah {
+    padding: 40px;
+    width: 100%;
+    height: 420px;
+  }
+
+  .card-aqiqah:hover {
+    transform: translateY(-10px);
+    border-color: #768491;
+    box-shadow: 0 20px 40px rgba(118, 132, 145, 0.2);
+  }
+
+  .label-cta {
+    top: 10%;
+    left: -40%;
+    transform: scale(0.7);
+  }
+
+  .card-img-menu {
+    margin-bottom: 20px;
+  }
+
+  .img-menu {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+  }
+
+  .card-img {
+    margin-bottom: 18px;
+  }
+
+  .img-kambing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    height: 220px;
+    object-fit: contain;
+  }
+
+  .card-title-cta {
+    margin-bottom: 20px;
+  }
+
+  .btn-whatsapp>img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+
+  .btn-whatsapp:hover {
+    background: #04df7c;
+  }
+
+  /* DAILY CATERING */
+  .content-dc {
+    width: 440px;
+    padding: 0;
+  }
+
+  .content-dc .title {
+    font-size: 48px;
+    line-height: 1.4;
+  }
+
+    .banner-dc {
+    width: 520px;
+    padding: 0;
+    justify-content: end;
+  }
+
+  .mt-dc {
+    margin-top: 16px;
+  }
+
+  /* FOOTER */
+  .footer-custom {
+    padding: 30px 0;
+  }
+
+    .copyright-text {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  /* TESTIMONI */
+
+}
+
+@media (min-width: 1440px) {
+
+  /* CONTAINER TOP - DESKTOP STYLES LG */
+  .legal-certification,
+  .halal-section,
+  .social-proof-section,
+  .paket-aqiqah-section {
+    padding: 100px 0;
+  }
+
+  /* NAVBAR - DESKTOP STYLES LG */
+  .brand-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* HERO SECTION - DESKTOP STYLES LG */
+  .hero-section {
+    min-height: 1024px;
+  }
+
+  .hero-content {
+    padding-top: 128px;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+    margin-bottom: 40px;
+  }
+
+  .hero-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .btn-order {
+    padding: auto 56px;
+    font-size: 16px;
+    width: 237px;
+    height: 72px;
+  }
+
+  .aqiqah-text {
+    transform: translateX(-50%) scale(2.91);
+    bottom: 70px;
+  }
+
+  /* LEGAL CERTIFICATION - DESKTOP STYLES LG */
+  .logo-box {
+    gap: 40px;
+  }
+
+  .logo-isolation {
+    width: 80px;
+    height: 80px;
+  }
+
+  .logo-halal {
+    width: 45px;
+    height: 80px;
+  }
+
+  .logo-bnsp {
+    width: 212px;
+    height: 80px;
+  }
+
+  .content-box h2 {
+    font-size: 44px;
+    margin-bottom: 40px;
+    line-height: 1.4;
+  }
+
+  .content-box p {
+    font-size: 20px;
+  }
+
+  /* HALAL SECTION - DESKTOP STYLES LG */
+
+  .halal-process {
+    width: 100%;
+    width: 802px;
+    min-height: 830px;
+  }
+
+  .process-circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .halal-center img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .bottom-left-item {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    transform: translateX(-50%);
+  }
+
+  .bottom-right-item {
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+    transform: translateX(50%);
+  }
+
+  /* Arrows pointing to center */
+  .arrow img {
+    height: 93px !important;
+    width: auto !important;
+  }
+
+  .arrow-from-top {
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%) translateY(108%);
+  }
+
+  .arrow-from-left {
+    top: 78%;
+    left: 130px;
+    transform: translateY(-40%) translateX(128%) rotate(-70deg);
+  }
+
+  .arrow-from-right {
+    top: 50%;
+    right: 130px;
+    transform: translateY(20%) translateX(-128%) rotate(70deg);
+  }
+
+  .arrow-from-bottom-left {
+    bottom: 90px;
+    left: 25%;
+    transform: translateX(228%) translateY(-128%) rotate(214deg);
+  }
+
+  .arrow-from-bottom-right {
+    bottom: 90px;
+    right: 25%;
+    transform: translateX(-240%) translateY(-128%) rotate(148deg);
+  }
+
+  /* Social proof adjustments */
+  .row.social-proof {
+    column-gap: 40px;
+    justify-content: center;
+  }
+
+  .card-sp {
+    max-width: 400px;
+    height: 440px;
+  }
+
+  .sp-card {
+    border-radius: 40px;
+    padding: 45px;
+  }
+
+  .sp-icon {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 40px;
+  }
+
+  .sp-icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .sp-title {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+
+  .sp-desc {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  /* .image-food-container {
+    max-width: 456px;
+    width: 100%;
+  } */
+
+  .main-content {
+    gap: 80px;
+  }
+
+  .category-list {
+    max-width: 744px;
+    width: 100%;
+  }
+
+  /* PAKET AQIQAH - DEKSTOP L */
+  .row.content-paket {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+  }
+
+  .card-pk {
+    min-height: 498px !important;
+    width: 400px;
+  }
+
+  .card-paket {
+    border-radius: 25px;
+    min-height: 429px !important;
+    width: 100%;
+  }
+
+  .card-img-container {
+    overflow: hidden;
+    border-radius: 15px;
+    height: 354px;
+    width: 354px;
+  }
+
+  .card-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  .card-body {
+    margin-top: 26px;
+  }
+
+  .card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .card-text {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  /* BEST SELLER SECTION - DESKTOP STYLES L */
+  .best-seller-card {
+    max-width: 560px;
+    height: 480px;
+    margin-right: 40px;
+  }
+
+  .title-bar {
+    padding: 56px 40px 80px 0;
+    margin-bottom: 0;
+  }
+
+  .badge-seller {
+    position: absolute;
+    font-size: 16px;
+    top: 40px;
+    right: 40px;
+  }
+
+  /* CATEGORY SECTION - DESKTOP STYLES L */
+  .nav-btn {
+    width: 72px;
+    height: 72px;
+  }
+
+  .nav-btn i {
+    font-size: 24px;
+  }
+
+  .image-wrapper {
+    max-width: 456px;
+  }
+
+  .image-food-container {
+    width: 456px;
+    height: 456px;
+    clip-path: path("M 40,0 L 416,0 A 40,40 0 0,1 456,40 L 456,315 A 40,40 0 0,1 416,355 L 308,355 A 40,40 0 0,0 268,395 L 268,416 A 40,40 0 0,1 228,456 L 40,456 A 40,40 0 0,1 0,416 L 0,40 A 40,40 0 0,1 40,0 Z");
+  }
+
+  .btn-overlay {
+    width: 157px;
+    height: 72px;
+    font-size: 16px;
+  }
+
+  .overlay-icon img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* TESTIMONI SECTION - DESKTOP STYLES L */
+  .testimonial-section {
+    padding: 160px 0;
+  }
+
+  .content-title {
+    margin-bottom: 80px;
+  }
+
+  .content-catalog {
+    width: 635px !important;
+  }
+
+  .testimonial-title {
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 40px;
+  }
+
+  .btn-catalog {
+    font-size: 16px;
+    padding: 0 32px;
+    border-radius: 16px;
+    width: 213px;
+    height: 52px;
+  }
+
+  .food-images {
+    display: flex;
+    gap: 25px;
+  }
+
+  .food-left img {
+    min-width: 210px;
+    height: 280px;
+    object-fit: cover;
+  }
+
+  .food-right {
+    padding: 0;
+  }
+
+  .food-right img {
+    width: 400px;
+    height: 280px;
+    object-fit: cover;
+  }
+
+
+  /* Testimonial Card Styles */
+  .content-testimoni {
+    display: flex;
+    justify-content: end;
+  }
+
+  .testimonial-card {
+    padding: 0 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 611px;
+    width: 565px;
+  }
+
+  .testimonial-users-wrapper {
+    width: 485px !important;
+    margin: 80px 0 40px 0;
+  }
+
+  .testimonial-users {
+    gap: 15px;
+  }
+
+  .testimonial-users img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .testimonial-users img.active {
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+    z-index: 2;
+  }
+
+  .testimonial-users-wrapper::before,
+  .testimonial-users-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    pointer-events: none;
+    z-index: 3;
+  }
+
+  .testimonial-users-wrapper::before {
+    left: 0px;
+    background: linear-gradient(90deg, #F9F9F9 52.88%, rgba(249, 249, 249, 0) 100%);
+    width: 98px;
+    height: 100px;
+  }
+
+  /* background: linear-gradient(90deg, #F9F9F9 52.88%, rgba(249, 249, 249, 0) 100%); */
+
+  .testimonial-users-wrapper::after {
+    right: 0;
+    background: linear-gradient(90deg, #F9F9F9 52.88%, rgba(249, 249, 249, 0) 100%);
+    width: 98px;
+    height: 100px;
+  }
+
+  .testimonial-text {
+    /* font-family: 'Inter', serif; */
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .testimonial-name {
+    font-size: 24px;
+  }
+
+  .rating {
+    font-size: 16px;
+    margin-bottom: 123px;
+  }
+
+
+  .carousel-indicators-custom {
+    gap: 8px;
+  }
+
+  /* CTA SECTION - DESKTOP STYLES L */
+  .cta-section {
+    padding: 180px 0;
+  }
+
+  .cards-wrapper {
+    gap: 80px;
+  }
+
+  .card-aqiqah {
+    padding: 65px 47px;
+    min-width: 600px !important;
+    width: 100%;
+    height: 629px !important;
+  }
+
+  .label-cta {
+    position: absolute;
+    top: 26%;
+    left: -1px;
+    height: auto;
+    z-index: 1;
+    transform: scale(1);
+  }
+
+  .card-img-menu {
+    padding: 0 13px;
+    margin-bottom: 30px;
+  }
+
+  .img-menu {
+    width: 480px;
+    height: 358px;
+    object-fit: contain;
+  }
+
+  .card-img {
+    margin-bottom: 18px;
+  }
+
+  .img-kambing {
+    width: 506px !important;
+    height: 370px;
+    object-fit: contain;
+  }
+
+  .card-title-cta {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  /* DAILY CATERING - DESKTOP STYLES L*/
+  .daily-catering {
+    padding: 48px 0;
+  }
+
+  .daily-catering-content {
+    padding: 0 40px;
+  }
+
+  .content-dc {
+    width: 527px;
+  }
+
+  .content-dc .title {
+    margin-bottom: 40px;
+  }
+
+  .content-dc p {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .btn-gofood {
+    font-family: 'Inter', sans-serif;
+    background: var(--red-color);
+    color: black;
+    border: none;
+    padding: 20px 32px;
+    margin-top: 30px;
+    border-radius: 16px;
+    font-size: 16px;
+  }
+
+  .gofood-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+}
