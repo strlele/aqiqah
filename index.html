@@ -34,13 +34,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link p-0" href="#tentang">Tentang</a>
+                        <a class="nav-link" href="#tentang">Tentang</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link p-0" href="#katalog">Katalog Menu</a>
+                        <a class="nav-link" href="#katalog">Katalog Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link p-0" href="#testimoni">Testimoni</a>
+                        <a class="nav-link" href="#testimoni">Testimoni</a>
                     </li>
                 </ul>
 
@@ -560,7 +560,6 @@
         document.addEventListener('DOMContentLoaded', function () {
             const navbar = document.querySelector('.navbar-container');
 
-            // Function untuk menambah/hapus class 'scrolled'
             function handleScroll() {
                 if (window.scrollY > 50) {
                     navbar.classList.add('scrolled');
@@ -569,20 +568,30 @@
                 }
             }
 
-            // Jalankan saat scroll
             window.addEventListener('scroll', handleScroll);
 
-            // Check saat pertama load (jika user sudah di tengah halaman)
             handleScroll();
         });
 
-        // Ganti active button saat diklik
+        // activev button
         document.querySelectorAll('.nav-btn').forEach(btn => {
             btn.addEventListener('click', function () {
                 document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
                 this.classList.add('active');
             });
         });
+
+        // KATEGORY
+        function selectCategory(element) {
+            // Hapus class active dari semua item
+            document.querySelectorAll('.category-item').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // Tambahkan class active ke item yang diklik
+            element.classList.add('active');
+        }
+
 
         const wrapperslide = document.getElementById('carouselWrapper');
         const prevBtn = document.getElementById('prevBtn');
@@ -702,16 +711,12 @@
 
                 showTestimonial(currentIndex);
 
-                // Cek apakah sudah mencapai clone terakhir
                 if (currentIndex >= userImages.length - cloneCount) {
                     setTimeout(() => {
-                        // Nonaktifkan transisi
                         usersContainer.style.transition = 'none';
-                        // Reset ke posisi awal (setelah clone pertama)
                         currentIndex = cloneCount;
                         showTestimonial(currentIndex);
 
-                        // Aktifkan kembali transisi setelah posisi direset
                         setTimeout(() => {
                             usersContainer.style.transition = 'transform 0.6s ease';
                             isTransitioning = false;

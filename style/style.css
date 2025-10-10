@@ -111,8 +111,13 @@ h2,
   color: rgba(255, 255, 255, 0.9) !important;
   font-weight: 500;
   font-size: 16px;
+  padding-top: 20px;
   margin: 0 20px;
   transition: all 0.3s ease;
+}
+
+.navbar-collapse > button {
+  margin-top: 20px;
 }
 
 .navbar-nav .nav-link:hover {
@@ -725,6 +730,7 @@ h2,
 
 .btn-overlay:hover {
   background: rgba(62, 39, 35, 1);
+  color: #ffff;
   transform: translateY(-3px);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
 }
@@ -1739,6 +1745,15 @@ h2,
   .navbar-brand {
     font-size: 20px;
   }
+
+  .navbar-nav .nav-link {
+  padding: 0;
+}
+
+  
+.navbar-collapse > button {
+  margin-top: 0;
+}
 
   .card-sp {
     max-width: 350px;
