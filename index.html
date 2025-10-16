@@ -729,6 +729,47 @@
                 }
             }
 
+            // Fungsi baru: Tambahkan event listener untuk klik pada setiap avatar
+            userImages.forEach((img, index) => {
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', () => {
+                    if (isTransitioning) return;
+                    
+                    isTransitioning = true;
+                    currentIndex = index;
+                    showTestimonial(currentIndex);
+
+                    // Handle jump ke clone
+                    if (currentIndex < cloneCount) {
+                        setTimeout(() => {
+                            usersContainer.style.transition = 'none';
+                            currentIndex = totalItems + cloneCount + currentIndex;
+                            showTestimonial(currentIndex);
+
+                            setTimeout(() => {
+                                usersContainer.style.transition = 'transform 0.6s ease';
+                                isTransitioning = false;
+                            }, 20);
+                        }, 600);
+                    } else if (currentIndex >= userImages.length - cloneCount) {
+                        setTimeout(() => {
+                            usersContainer.style.transition = 'none';
+                            currentIndex = cloneCount + (currentIndex - (userImages.length - cloneCount));
+                            showTestimonial(currentIndex);
+
+                            setTimeout(() => {
+                                usersContainer.style.transition = 'transform 0.6s ease';
+                                isTransitioning = false;
+                            }, 20);
+                        }, 600);
+                    } else {
+                        setTimeout(() => {
+                            isTransitioning = false;
+                        }, 600);
+                    }
+                });
+            });
+
             setInterval(nextTestimonial, 4000);
 
             setTimeout(() => {
